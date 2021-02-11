@@ -1,5 +1,5 @@
 .account {
-  height: 230px;
+  height: 700px;
   background: #C4C4C4;
 
   &__title {
@@ -14,23 +14,69 @@
   &__bank {
     margin-top: 30px;
     background: #908C8C;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__text {
-    color: white;
-    text-align: center;
-  }
-
-  &__number {
-    border: none;
     margin-top: 22px;
-    margin-left: 15px;
-    margin-bottom: 50px;
+    color: white;
   }
 
   &__agency {
     border: none;
     margin-top: 22px;
-    margin-left: 85px;
+    margin-bottom: 16px;
+  }
+
+  &__number {
+    border: none;
+    margin-top: 22px;
+    margin-bottom: 50px;
+  }
+
+  &__keyboard {
+    margin-top: 50px;
+    background: black;
+    height: 250px;
+    width: 280px;
+    text-align: center;
+
+  }
+
+  &__key {
+    background: #C4C4C4;
+    border: 10px solid black;
+    margin-right: 15px;
+    margin-left: 15px;
+    min-width: 60px;
+    min-height: 60px;
+
+    &--enter {
+      color: red;
+      border: 10px solid black;
+      background: #C4C4C4;
+      width: 120px;
+    }
+    &--cancel {
+      color: yellow;
+      border: 10px solid black;
+      background: #C4C4C4;
+      width: 120px;
+    }
+    &--correct {
+      color: green;
+      border: 10px solid black;
+      background: #C4C4C4;
+      width: 120px;
+    }
+    &--text {
+      border: 10px solid black;
+      background: #C4C4C4;
+      width: 120px;
+    }
+
   }
 }

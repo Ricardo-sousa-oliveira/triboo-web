@@ -6,37 +6,42 @@
           <p>Current Account Deposit</p>
         </div>
       </div>
-      <div class="col-12">
+      <div class="col-10 offset-1">
         <div class="account__bank">
           <label class="account__text" for="Agency">Agência</label>
-          <input class="account__agency" type="number">
+          <input type="text" readonly id="campo" class="account__agency teclado_text">
           <label class="account__text" for="Account">Número da Conta</label>
-          <input class="account__number" type="number">
+          <input type="text" readonly id="campo" class="account__number teclado_text">
         </div>
       </div>
-      <div class="col-5">
-        <input type="text" readonly id="campo" class="teclado_text">
-        <table class="table_teclado">
+      <div class="col-5 offset-1">
+        <table class="account__keyboard table_teclado">
           <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <td class="account__key">1</td>
+            <td class="account__key">2</td>
+            <td class="account__key">3</td>
+            <td class="account__key--enter" colspan="2">enter</td>
           </tr>
           <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
+            <td class="account__key">4</td>
+            <td class="account__key">5</td>
+            <td class="account__key">6</td>
+            <td class="account__key--cancel" colspan="2">cancel</td>
           </tr>
           <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
+            <td class="account__key">7</td>
+            <td class="account__key">8</td>
+            <td class="account__key">9</td>
+            <td class="account__key--correct" colspan="2">correct</td>
           </tr>
           <tr>
-            <td colspan="2">0</td>
+            <td class="account__key"></td>
+            <td class="account__key">0</td>
+            <td class="account__key"><svg class="btn_delete" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M6.535 3H21a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6.535a1 1 0 0 1-.832-.445l-5.333-8a1 1 0 0 1 0-1.11l5.333-8A1 1 0 0 1 6.535 3zm.535 2l-4.666 7 4.666 7H20V5H7.07zM13 10.586l2.828-2.829 1.415 1.415L14.414 12l2.829 2.828-1.415 1.415L13 13.414l-2.828 2.829-1.415-1.415L11.586 12 8.757 9.172l1.415-1.415L13 10.586z"/></svg></td>
+            <td class="account__key--text" colspan="2">.</td>
+
           </tr>
         </table>
-
       </div>
     </div>
   </div>
