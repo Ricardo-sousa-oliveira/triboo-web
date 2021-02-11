@@ -1,3 +1,36 @@
-.text {
-  background: blue;
+.account {
+  height: 230px;
+  background: #C4C4C4;
+
+  &__title {
+    background: #ECCF5C;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__bank {
+    margin-top: 30px;
+    background: #908C8C;
+  }
+
+  &__text {
+    color: white;
+    text-align: center;
+  }
+
+  &__number {
+    border: none;
+    margin-top: 22px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+  }
+
+  &__agency {
+    border: none;
+    margin-top: 22px;
+    margin-left: 85px;
+  }
 }
