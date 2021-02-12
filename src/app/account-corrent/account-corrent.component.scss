@@ -1,9 +1,18 @@
+
+// SCREEN-SIZE ----------------------------------------------------------------
+$screen-xl-min: 1200px;
+$screen-lg-min: 992px;
+$screen-md-min: 768px;
+$screen-sm-min: 576px;
+
 .account {
-  height: 700px;
   background: #C4C4C4;
+  height: 700px;
 
   &__title {
     background: #ECCF5C;
+    font-size: 22px;
+    height: 100%;
     text-align: center;
 
     p {
@@ -12,70 +21,131 @@
   }
 
   &__bank {
-    margin-top: 30px;
     background: #908C8C;
-    text-align: center;
+    margin-top: 30px;
+  }
+
+  &__box {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
 
   &__text {
-    margin-top: 22px;
     color: white;
+    margin-top: 22px;
   }
 
   &__agency {
     border: none;
-    margin-top: 22px;
     margin-bottom: 16px;
+    margin-top: 22px;
   }
 
   &__number {
     border: none;
-    margin-top: 22px;
     margin-bottom: 50px;
+    margin-top: 22px;
   }
 
   &__keyboard {
-    margin-top: 50px;
     background: black;
     height: 250px;
-    width: 280px;
+    margin-left: 30px;
+    margin-top: 50px;
     text-align: center;
-
+    width: 250px;
   }
 
   &__key {
     background: #C4C4C4;
     border: 10px solid black;
-    margin-right: 15px;
     margin-left: 15px;
-    min-width: 60px;
+    margin-right: 15px;
     min-height: 60px;
+    min-width: 60px;
 
     &--enter {
-      color: red;
-      border: 10px solid black;
       background: #C4C4C4;
+      border: 10px solid black;
+      color: red;
       width: 120px;
     }
     &--cancel {
-      color: yellow;
-      border: 10px solid black;
       background: #C4C4C4;
+      border: 10px solid black;
+      color: yellow;
       width: 120px;
     }
     &--correct {
-      color: green;
-      border: 10px solid black;
       background: #C4C4C4;
+      border: 10px solid black;
+      color: green;
       width: 120px;
     }
     &--text {
-      border: 10px solid black;
       background: #C4C4C4;
+      border: 10px solid black;
       width: 120px;
+    }
+
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .account {
+    &__bank {
+      padding-bottom: 60px;
+    }
+
+    &__number {
+      margin-bottom: 8px;
+    }
+
+    &__keyboard {
+      margin: 100px;
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .account {
+    height: 630px;
+
+    &__text {
+      margin-left: 40px;
+    }
+
+    &__box {
+      flex-direction: row;
+    }
+
+    &__bank {
+      flex-direction: row;
+      margin-top: 60px;
+      width: 540px;
+    }
+
+    &__agency {
+      margin-left: 140px;
+    }
+
+    &__number {
+      margin-bottom: 8px;
+      margin-left: 70px;
+    }
+  }
+}
+@media (min-width: $screen-lg-min) {
+  .account {
+    &__bank {
+      margin-top: 60px;
+      width: 700px;
+    }
+
+    &__keyboard {
+      position: absolute;
     }
 
   }

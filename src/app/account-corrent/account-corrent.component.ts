@@ -15,7 +15,7 @@ export class AccountCorrentComponent implements OnInit {
 
 }
 $(document).ready(function(){
-	$('.table_teclado tr td').click(function(){
+	$('.table_teclado tr account__key').click(function(){
 		const number = $(this).text();
 
 		if (number == '') {
